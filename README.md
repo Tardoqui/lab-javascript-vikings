@@ -126,7 +126,7 @@ Modify the `Soldier` class and add 2 methods to it: `attack()`, and `receiveDama
 - should remove the received damage from the `health` property
 - **shouldn't return** anything
 
-<br>
+<br>  
 
 ### Iteration 2: Viking
 
