@@ -96,20 +96,21 @@ class War {
 
     let damage2 = this.vikingArmy[0].receiveDamage(this.saxonArmy[0].strength);
 
-    if (viking1.health < 0){
+    if (viking1.health <= 0){
       this.vikingArmy.pop(viking1)
-      return `${this.vikingArmy[0].name} has died in act of combat`
-    }
+      return `${this.vikingArmy[0]} has died in act of combat`
+    } 
     else {
       return `${this.vikingArmy[0].name} has received ${saxon1.strength} points of damage`
     }
-  }
+    
+  } 
   showStatus(){
     if ((this.saxonArmy.length === 0) && (this.vikingArmy.length > 0)){
       return "Vikings have won the war of the century!"
     }
     else if ((this.vikingArmy.length === 0) && (this.saxonArmy.length > 0)){
-      return "Saxons have fought for their lives and survived another day.."
+      return "Saxons have fought for their lives and survived another day..."
     }
     else if ((this.vikingArmy.length >= 1) && (this.saxonArmy.length >= 1)){
       return "Vikings and Saxons are still in the thick of battle."
